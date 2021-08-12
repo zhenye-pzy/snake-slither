@@ -1,11 +1,11 @@
-import { getInputDirection } from "./input.js";
+const { getInputDirection } = require("./input.js");
 
 //Drawing of snake body using x and y
 const snakeBody = [{ x: 11, y: 11 }]
 let AddonSegments = 0
 
-
-export function update() {
+// export function update() {
+export function updateSnake() {
     AdditionalSegments()
     const inputDirection = getInputDirection()
     //Loop through the whole snake body except for the last piece of block
@@ -22,8 +22,9 @@ export function update() {
     snakeBody[0].y += inputDirection.y
 }
 
+// export function draw() {
 //Draw it onto the gameBoard
-export function draw(gameBoard) {
+export function drawSnake(gameBoard) {
     //Loop through each piece of the snake
     snakeBody.forEach(segment => {
 
@@ -71,7 +72,7 @@ function AdditionalSegments() {
     for (let i = 0; i < AddonSegments; i++) {
         //Taking the last element of the snake and duplicating it onto the end of the snake
         snakeBody.push({ ...snakeBody[snakeBody.length - 1] });
-       
+
     }
     //To stop it from adding elements continuously, only add on when we tell it to add on
     AddonSegments = 0;

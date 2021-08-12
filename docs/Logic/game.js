@@ -1,6 +1,10 @@
-import { update as updateSnake, draw as drawSnake, getSnakeHead, snakeIntersection } from './snake.js';
-import { update as updateFood, draw as drawFood } from './snakefood.js';
-import { outsideGrid } from './Grids.js'
+// import { update as updateSnake, draw as drawSnake, getSnakeHead, snakeIntersection } from './snake.js';
+// import { update as updateFood, draw as drawFood } from './snakefood.js';
+// import { outsideGrid } from './Grids.js'
+
+const { updateSnake, drawSnake, getSnakeHead, snakeIntersection } = require('./snake.js');
+const { updateFood, drawFood } = require('./snakefood.js');
+const { outsideGrid } = require('./Grids.js');
 
 
 // let host = 'http://localhost:8800'
@@ -92,7 +96,7 @@ var Score = localStorage.getItem('Score');
 //             border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
 
 //                 <p class="card-text" style="color: black; overflow: hidden; max-height: 55px; margin-bottom: 1.5em">${Score}</p>
-                
+
 //                 <div style="min-height: 20px;">
 //                     <a href="owner.html" style="    
 //                     padding: 7px 12px;
