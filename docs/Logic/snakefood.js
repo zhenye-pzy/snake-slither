@@ -1,5 +1,3 @@
-
-
 const { onSnake, GrowSnake } = require('./snake');
 const { getRandomGridPosition } = require('./Grids');
 

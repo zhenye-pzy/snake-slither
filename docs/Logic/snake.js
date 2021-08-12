@@ -81,8 +81,6 @@
 
 
 
-
-
 const { getInputDirection } = require("./input");
 
 //Drawing of snake body using x and y
