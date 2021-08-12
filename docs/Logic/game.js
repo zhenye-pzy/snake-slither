@@ -2,9 +2,9 @@
 // import { update as updateFood, draw as drawFood } from './snakefood.js';
 // import { outsideGrid } from './Grids.js'
 
-const { updateSnake, drawSnake, getSnakeHead, snakeIntersection } = require('./snake.js');
-const { updateFood, drawFood } = require('./snakefood.js');
-const { outsideGrid } = require('./Grids.js');
+const { updateSnake, drawSnake, getSnakeHead, snakeIntersection } = require('./snake');
+const { updateFood, drawFood } = require('./snakefood');
+const { outsideGrid } = require('./Grids');
 
 
 // let host = 'http://localhost:8800'

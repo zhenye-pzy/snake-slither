@@ -1,7 +1,7 @@
-// 
 
-const { onSnake, GrowSnake } = require('./snake.js');
-const { getRandomGridPosition } = require('./Grids.js');
+
+const { onSnake, GrowSnake } = require('./snake');
+const { getRandomGridPosition } = require('./Grids');
 
 let snakeFood = GetRandomFoodPos()
 const growth_rate = 1;
