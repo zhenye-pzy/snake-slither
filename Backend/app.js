@@ -19,15 +19,15 @@ app.post('/', function (req, res) {
     })
 })
 
-app.post('/Gamestats', function (req, res) {
-    var Names = req.query.Names
-    var Score = req.query.Score
+// app.post('/Gamestats', function (req, res) {
+//     var Names = req.query.Names
+//     var Score = req.query.Score
 
-    return res.status(200).json({
-        Player: Names,
-        Score: Score
-    })
-})
+//     return res.status(200).json({
+//         Player: Names,
+//         Score: Score
+//     })
+// })
 
 // app.get('/StartGame', function (req, res) {
 //     if (GameId === null) {
