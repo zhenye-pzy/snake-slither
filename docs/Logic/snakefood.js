@@ -1,3 +1,5 @@
+// 
+
 const { onSnake, GrowSnake } = require('./snake.js');
 const { getRandomGridPosition } = require('./Grids.js');
 
@@ -6,7 +8,7 @@ const growth_rate = 1;
 let count = 0;
 
 //Update the food
-export function updateFood() {
+function updateFood() {
 
     if (onSnake(snakeFood)) {
         GrowSnake(growth_rate)
@@ -20,7 +22,7 @@ export function updateFood() {
 
 
 //Draw it onto the gameBoard
-export function drawFood(gameBoard) {
+function drawFood(gameBoard) {
     const food = document.createElement('div')
     //Setting the x and y co-ordinate
     food.style.gridRowStart = snakeFood.y
@@ -36,4 +38,10 @@ function GetRandomFoodPos() {
         newFoodPosition = getRandomGridPosition()
     }
     return newFoodPosition
+}
+
+
+module.exports = {
+    updateFood: updateFood,
+    drawFood: drawFood
 }
