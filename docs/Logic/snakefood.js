@@ -1,5 +1,5 @@
-const { onSnake, GrowSnake } = require('./snake');
-const { getRandomGridPosition } = require('./Grids');
+var { onSnake, GrowSnake } = require('./snake');
+var { getRandomGridPosition } = require('./Grids');
 
 let snakeFood = GetRandomFoodPos()
 const growth_rate = 1;

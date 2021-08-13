@@ -81,7 +81,7 @@
 
 
 
-const { getInputDirection } = require("./input");
+var { getInputDirection } = require("./input");
 
 //Drawing of snake body using x and y
 const snakeBody = [{ x: 11, y: 11 }]
