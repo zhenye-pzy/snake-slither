@@ -1,6 +1,7 @@
 // import { update as updateSnake, draw as drawSnake, getSnakeHead, snakeIntersection } from './snake.js';
 // import { update as updateFood, draw as drawFood } from './snakefood.js';
 // import { outsideGrid } from './Grids.js'
+const require = createRequire(import.meta.url)
 var { updateSnake, drawSnake, getSnakeHead, snakeIntersection } = require('./snake');
 var { updateFood, drawFood } = require('./snakefood');
 var { outsideGrid } = require('./Grids');
